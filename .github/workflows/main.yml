@@ -6,11 +6,7 @@ on:
       - main
 
   schedule:
-<<<<<<< HEAD
-    -cron: '2 * * * *'
-=======
-    - cron: '2 * * * *'   # Har roz subah 9 baje UTC time me chalega
->>>>>>> refs/remotes/origin/main
+    - cron: '0 9 * * *'   # Har roz subah 9 baje UTC time me chalega
 
 jobs:
   print_message:
