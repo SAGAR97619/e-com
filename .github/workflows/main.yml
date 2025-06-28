@@ -1,17 +1,17 @@
-name: Print Message on Push
+name: Push and Scheduled Workflow
 
 on:
   push:
     branches:
-      - main  # Jab koi main branch me push kare
+      - main
 
   schedule:
-    -cron: '5 * * * *'
+    - cron: '2 * * * *'   # Har roz subah 9 baje UTC time me chalega
 
 jobs:
-  say_hello:
+  print_message:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print code updated message
-        run: echo "✅ Code Updated"
+      - name: Print message
+        run: echo "✅ Code Updated / Scheduled Run"
