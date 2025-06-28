@@ -6,7 +6,7 @@ on:
       - main  # Jab koi main branch me push kare
 
   schedule:
-    -cron: '5 * * * *'
+    -cron: '2 * * * *'
 
 jobs:
   say_hello:
