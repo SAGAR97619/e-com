@@ -1,0 +1,14 @@
+name: Print Message on Push
+
+on:
+  push:
+    branches:
+      - main  # Jab koi main branch me push kare
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print code updated message
+        run: echo "✅ Code Updated"
