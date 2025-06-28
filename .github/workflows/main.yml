@@ -6,7 +6,7 @@ on:
       - main
 
   schedule:
-    - cron: '0 9 * * *'   # Har roz subah 9 baje UTC time me chalega
+    - cron: '1 * * * *'   # Har roz subah 9 baje UTC time me chalega
 
 jobs:
   print_message:
